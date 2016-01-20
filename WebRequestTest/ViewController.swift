@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlString = "http://swapi.co/people/1/"
+        let urlString = "http://swapi.co/api/people/1/"
         let url = NSURL(string: urlString)!
         let session = NSURLSession.sharedSession()
         
