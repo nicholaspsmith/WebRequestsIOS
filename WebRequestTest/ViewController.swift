@@ -30,7 +30,12 @@ class ViewController: UIViewController {
                             
                             let person = SWPerson(name: name, height: height, birthYear: birth, hairColor: hair)
                             
-                            print(person.name)
+                            
+                            if let films = dict["films"] as? [String] {
+                                for film in films {
+                                    print(film)
+                                }
+                            }
                             
                         }
                     }
